@@ -2,3 +2,5 @@
 *.sh
 data/
 saved_models/
+results/
+*.log
