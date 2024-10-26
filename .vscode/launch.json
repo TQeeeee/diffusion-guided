@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 调试程序: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python 调试程序: 包含参数的当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--dataset","twitter",
+                "--prefix","std",
+                "--gpu","0",
+                "--epoch","150",
+                "--embedding_module","aggregate",
+                "--use_dynamic",
+                "--use_temporal",
+                "--use_structural",
+                "--use_static",
+                "--dropout","0.6",
+                "--predictor","merge",
+                "--lambda","0.1"
+
+            ]
+        },
+        {
+            "name": "Python Debugger: Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}"
+        }
+    ]
+}

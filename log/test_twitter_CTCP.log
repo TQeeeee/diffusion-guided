@@ -1,0 +1,7 @@
+2024-05-21 16:45:24,779 - root - INFO - Min time is 1332565200, Train time is 8, Val time is 12, Test time is 16, Time unit is 86400
+2024-05-21 16:46:35,204 - root - INFO - Total Trans num is 602253, Train cas num is 13802, Val cas num is 2958, Test cas num is 2958
+2024-05-21 16:46:35,372 - root - INFO - Time cost for loading data is 79.99432635307312s
+2024-05-21 16:46:35,375 - root - INFO - {'dataset': 'twitter', 'bs': 50, 'prefix': 'test_twitter_CTCP', 'epoch': 5, 'lr': 0.0001, 'run': 1, 'gpu': 0, 'node_dim': 64, 'time_dim': 16, 'patience': 15, 'dropout': 0.1, 'predictor': 'linear', 'embedding_module': 'aggregate', 'single': False, 'use_static': False, 'use_dynamic': False, 'use_structural': False, 'use_temporal': False, 'lambda': 0.5, 'model_path': 'saved_models/test_twitter_CTCP', 'result_path': 'results/test_twitter_CTCP', 'log_path': 'log/test_twitter_CTCP.log', 'observe_time': 2, 'predict_time': 500, 'time_unit': 86400, 'train_time': 8, 'val_time': 12, 'test_time': 16, 'min_cas_size': 11, 'max_cas_size': 100, 'max_time': {'user': 1, 'cas': 2}, 'node_num': {'user': 179288, 'cas': 19718}, 'max_global_time': 19.34800925925926}
+2024-05-21 16:46:47,640 - root - INFO - begin runs:0
+2024-05-21 16:46:49,091 - root - INFO - Start training citation
+2024-05-21 16:47:43,558 - root - INFO - Epoch 0:
