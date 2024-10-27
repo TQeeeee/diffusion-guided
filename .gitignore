@@ -4,3 +4,4 @@ data/
 saved_models/
 results/
 *.log
+demo.py

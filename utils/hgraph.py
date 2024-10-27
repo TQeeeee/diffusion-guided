@@ -89,7 +89,9 @@ class Cascade:
         map_srcs = list(map(lambda x: self.node2id[x], srcs))
         map_dsts = list(map(lambda x: self.node2id[x], dsts))
         graph_leaf = dgl.graph((map_srcs, map_dsts))
+        # 为节点添加名为'id'的特征，值为节点的id
         graph_leaf.ndata['id'] = torch.tensor(list(map(lambda x: self.id2node[x], ids)))
+        # 为边添加名为'time'的特征，值为time的值
         graph_leaf.edata['time'] = torch.tensor(times, dtype=torch.float)
         graph_leaf = dgl.RemoveSelfLoop()(graph_leaf)
         graph_leaf.ndata['mask'] = torch.tensor(graph_leaf.out_degrees() == 0, dtype=torch.float).unsqueeze(dim=-1)
